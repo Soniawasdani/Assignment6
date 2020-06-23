@@ -5,7 +5,7 @@ var firstName = prompt("Enter your Firstname");
 var lasttName = prompt("Enter your lastname");
 var fullName = firstName+lasttName;
 
-document.write("Hello"+" "+firstName+" "+ " "+lasttName);
+document.write("Hello"+" "+fullName);
 
 
 // //TASK2
@@ -38,7 +38,7 @@ var nation  = "pakistani";
 
 
 document.write("<br><br>String"+" "+nation);
-document.write("<br><br>Index of 'n':"+" "+nation.charAt(3));
+document.write("<br><br>Index of 'i':"+" "+nation.charAt(3));
 
 
 // TASK6
@@ -48,7 +48,7 @@ var firstName = prompt("Enter your Firstname");
 var lasttName = prompt("Enter your lastname");
 var fullName = firstName+lasttName;
 
-document.write("Hello"+" "+firstName+" "+ " "+lasttName);
+document.write("Hello"+" "+fullName);
 
 
 // // TASK7
@@ -714,6 +714,13 @@ counting();
 
 //TASK8
 document.write("<br><br><h2>TASK8</h2><br><br>");
+document.write("<br><br><h2>TASK8</h2><br><br>");
+
+function pythagorean(sideA, sideB){
+    return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+  }
+  
+  document.write(pythagorean(4, 3));
 
 
 
@@ -811,5 +818,20 @@ function findShortestWord(str) {
 //   //TASK13
 document.write("<br><br><h2>TASK13</h2><br><br>");
 
+
+function char_count(str, letter) 
+{
+ var letter_Count = 0;
+ for (var position = 0; position < str.length; position++) 
+ {
+    if (str.charAt(position) == letter) 
+      {
+      letter_Count += 1;
+      }
+  }
+  return letter_Count;
+}
+
+console.log(char_count('JSResourceS.com', 'o'  ));
 //   //TASK14
 document.write("<br><br><h2>TASK14</h2><br><br>");
